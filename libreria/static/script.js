@@ -62,7 +62,7 @@ function agregarNuevaNota(data = { id: null, titulo: '', descripcion: '', autor:
         titulo: campos.titulo.value,
         descripcion: campos.descripcion.value,
         autor: campos.autor.value,
-        date: campos.date.value,
+        fecha: campos.date.value,  // Ensure the field name matches the model
       });
     }
   });

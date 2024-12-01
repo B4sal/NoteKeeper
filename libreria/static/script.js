@@ -1,4 +1,6 @@
 const btnAgregar = document.getElementById('add');
+const notesContainer = document.createElement('div');
+document.body.appendChild(notesContainer);
 
 // Cargar notas desde la base de datos al cargar la página
 cargarNotasDesdeBaseDeDatos();
@@ -71,7 +73,7 @@ function agregarNuevaNota(data = { id: null, titulo: '', descripcion: '', autor:
     campo.addEventListener('input', actualizarLocalStorage);
   });
 
-  document.body.appendChild(nota);
+  notesContainer.appendChild(nota); // Append to the container instead of body
   if (!data.titulo && !data.descripcion && !data.autor && !data.date) {
     nota.classList.add('editing');
   }

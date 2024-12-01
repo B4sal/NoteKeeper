@@ -9,27 +9,6 @@
     <title>Notes Keeper</title>
   </head>
   <body>
-    <form method="post">
-      {% csrf_token %}
-      <div class="field">
-        <label for="titulo">Título</label>
-        <input type="text" id="titulo" name="titulo" placeholder="Escribe un título...">
-      </div>
-      <div class="field">
-        <label for="descripcion">Descripción</label>
-        <textarea id="descripcion" name="descripcion" placeholder="Escribe una descripción..."></textarea>
-      </div>
-      <div class="field">
-        <label for="autor">Autor</label>
-        <input type="text" id="autor" name="autor" placeholder="Escribe el autor...">
-      </div>
-      <div class="field">
-        <label for="date">Fecha</label>
-        <input type="date" id="date" name="fecha">
-      </div>
-      <button type="submit">Guardar Nota</button>
-    </form>
-
     <button class="add" id="add">
       <i class="fas fa-plus"></i> Add note
     </button>
